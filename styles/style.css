@@ -1,0 +1,244 @@
+.outerdiv{
+    background-color: black;
+}
+.row{
+
+}
+.div11 , .div12{
+    display: flexbox;
+}
+.brand{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ols{
+    text-decoration-line: none;
+    color: white;
+    text-decoration: none;
+    padding-left: 780px;  
+    display: flex;
+}
+.h1 , .h2 , .h3 , .h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color : white;
+    padding: 10px;
+    text-decoration: none;
+    display: flex
+}
+.innerdiv{
+    
+    padding: 60px;
+    padding-left: 150px;
+}
+.h33{
+    color: white;
+
+}
+.h11{
+    color: darkred;
+}
+
+.img1{
+    height: 500px;
+    width: 400px;
+}
+
+.div1{
+    display: flex;
+}
+
+.divvv{
+    padding-left: 100px;
+}
+.btn{
+    color: white;
+    border-radius: 10px;
+    background-color: darkred;
+}
+.p1 , .p2{
+    color: white;
+}
+.li1 , .li2 , .li3{
+    font-size: 100px;
+    size: 80px;
+    color: white;
+}
+
+.ol{
+   
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 600px;
+    padding-top: 50px;
+}
+.twitter , .fb , .insta{
+   
+   padding: 10px;
+}
+
+.twitter , .fb , .insta{
+   border-color: white;
+   border-radius: 10px;
+   border-style: double;
+}
+.p4 , .p5{
+   color: white;
+   padding-left: 580px;
+}
+.p6{
+   padding-left: 600px;
+}
+.p7{
+   padding-left: 570px;
+}
+.div5{
+   padding-right: 50px;
+}
+
+
+
+.imgg{
+   height: 400px;
+   padding-left: 60px;
+}
+
+
+
+#slider {
+   
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid black;
+    background: white;
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background: darkred;
+ }
+ #slides .slide_2 {
+    background: darkred;
+ }
+ #slides .slide_3 {
+    background: darkred;
+ }
+ 
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
